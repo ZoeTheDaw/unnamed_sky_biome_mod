@@ -11,8 +11,11 @@ showAsResourcePack=false
   displayName="Halcyon Horizons"
   updateJSONURL="https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json"
   displayURL="https://minecraftforge.net"
-  logoFile="logo.png"
-  credits="I'd like to thank everyone who supported this mod, as well as ."
+  logoFile="horizons_logo.png"
+  credits=
+  "Coding: ZoeTheDaw, Trafficone 
+  Conceptualizing and Quality Control: ZoeTheDaw, Trafficone
+  Art: ZoeTheDaw, tissuebounce"
   authors="Author"
   description='''
   Adds a variety of biomes high up in the sky. Each with their own identity and mechanics to invest in.
@@ -25,4 +28,3 @@ showAsResourcePack=false
   versionRange="[46,)"
   ordering="NONE"
   side="BOTH"
-  
