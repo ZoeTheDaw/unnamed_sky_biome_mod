@@ -1,0 +1,28 @@
+modLoader="javafml"
+loaderVersion="[46,)"
+
+license="MIT"
+issueTrackerURL="https://github.com/MinecraftForge/MinecraftForge/issues"
+showAsResourcePack=false
+
+[[mods]]
+  modId="halcyonhorizons"
+  version="1.0.0.0"
+  displayName="Halcyon Horizons"
+  updateJSONURL="https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json"
+  displayURL="https://minecraftforge.net"
+  logoFile="logo.png"
+  credits="I'd like to thank everyone who supported this mod, as well as ."
+  authors="Author"
+  description='''
+  Adds a variety of biomes high up in the sky. Each with their own identity and mechanics to invest in.
+  '''
+  displayTest="MATCH_VERSION"
+
+[[dependencies.examplemod]]
+  modId="lithostitched"
+  mandatory=true
+  versionRange="[46,)"
+  ordering="NONE"
+  side="BOTH"
+  
