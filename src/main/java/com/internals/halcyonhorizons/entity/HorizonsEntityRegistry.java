@@ -1,1 +1,1 @@
-package com.internals.halcyonhorizons.halcyonhorizons;
+package com.internals.halcyonhorizons.halcyonhorizons.entity;
