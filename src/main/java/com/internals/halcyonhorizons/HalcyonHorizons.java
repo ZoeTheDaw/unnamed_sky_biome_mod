@@ -3,15 +3,26 @@ package com.internals.halcyonhorizons;
 import com.internals.halcyonhorizons.client.ClientProxy;
 import com.internals.halcyonhorizons.client.model.layer.HorizonsModelLayer;
 import com.internals.halcyonhorizons.client.particle.HorizonParticleRegistry;
+
+import com.internals.halcyonhorizons.server.CommonProxy;
 import com.internals.halcyonhorizons.server.block.HorizonsBlockRegistry;
+import com.internals.halcyonhorizons.server.block.entity.HorizonsBlockEntityRegistry;
+import com.internals.halcyonhorizons.server.block.poi.HorizonsPOIRegistry;
 import com.internals.halcyonhorizons.server.enchantment.HorizonsEnchantmentRegistry;
 import com.internals.halcyonhorizons.server.entity.HorizonsEntityRegistry;
 import com.internals.halcyonhorizons.server.iventory.HorizonsInventoryRegistry;
 import com.internals.halcyonhorizons.server.item.HorizonsItemRegistry;
 import com.internals.halcyonhorizons.server.level.HorizonsLevelRegistry;
+import com.internals.halcyonhorizons.server.level.biome.HorizonsBiomeRegistry;
+import com.internals.halcyonhorizons.server.level.carver.HorizonsCarverRegistry;
+import com.internals.halcyonhorizons.server.level.structure.HorizonsStructureRegistry;
+import com.internals.halcyonhorizons.server.level.structure.pice.HorizonsStructurePieceRegistry;
+import com.internals.halcyonhorizons.server.level.structure.HorizonsStructureProcessorRegistry;
 import com.internals.halcyonhorizons.server.message.HorizonsMessageRegistry;
 import com.internals.halcyonhorizons.server.potion.HorizonsPotionRegistry;
 import com.internals.halcyonhorizons.server.recipe.HorizonsRecipeRegistry;
+import com.internals.halcyonhorizons.server.message.*;
+import com.internals.halcyonhorizons.server.misc.*;
 
 import com.mojang.logging.LogUtils;
 import net.minecraft.resources.ResourceLocation;
