@@ -2,7 +2,7 @@ modLoader="javafml"
 loaderVersion="[46,)"
 
 license="MIT"
-issueTrackerURL="https://github.com/MinecraftForge/MinecraftForge/issues"
+issueTrackerURL="https://github.com/ZoeTheDaw/HalcyonHorizons/issues"
 showAsResourcePack=false
 
 [[mods]]
@@ -10,21 +10,30 @@ showAsResourcePack=false
   version="1.0.0.0"
   displayName="Halcyon Horizons"
   updateJSONURL="https://files.minecraftforge.net/net/minecraftforge/forge/promotions_slim.json"
-  displayURL="https://minecraftforge.net"
+  displayURL=""
   logoFile="horizons_logo.png"
-  credits=
-  "Coding: ZoeTheDaw, Trafficone 
-  Conceptualizing and Quality Control: ZoeTheDaw, Trafficone
-  Art: ZoeTheDaw, tissuebounce"
-  authors="Author"
+  credits="tissuebounce"
+  authors="ZoeTheDaw, Trafficone"
   description='''
-  Adds a variety of biomes high up in the sky. Each with their own identity and mechanics to invest in.
+  Look up and explore the mysteries of the skies above.
   '''
   displayTest="MATCH_VERSION"
 
-[[dependencies.examplemod]]
-  modId="lithostitched"
-  mandatory=true
-  versionRange="[46,)"
-  ordering="NONE"
-  side="BOTH"
+[[dependencies.alexscaves]] #optional
+# the modid of the dependency
+modId="citadel" #mandatory
+# Does this dependency have to exist - if not, ordering below must be specified
+mandatory=true #mandatory
+# The version range of the dependency
+versionRange="[2.6.0,)" #mandatory
+# An ordering relationship for the dependency - BEFORE or AFTER required if the relationship is not mandatory
+ordering="AFTER"
+# Side this dependency is applied on - BOTH, CLIENT or SERVER
+side="BOTH"
+
+[[dependencies.alexscaves]]
+modId="forge"
+mandatory=true
+versionRange="[47.1.3,)"
+ordering="NONE"
+side="BOTH"
