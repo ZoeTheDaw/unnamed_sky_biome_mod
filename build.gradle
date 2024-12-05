@@ -105,12 +105,6 @@ minecraft {
             // You can set various levels here.
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
-
-            mods {
-                "${mod_id}" {
-                    source sourceSets.main
-                }
-            }
         }
 
         client {
@@ -166,7 +160,7 @@ tasks.named('processResources', ProcessResources).configure {
             minecraft_version: minecraft_version, minecraft_version_range: minecraft_version_range,
             forge_version: forge_version, forge_version_range: forge_version_range,
             loader_version_range: loader_version_range,
-            mod_id: mod_id, mod_name: mod_name, mod_license: mod_license, mod_version: mod_version,
+            mod_id: halcyonhorizons, mod_name: HalcyonHorizons, mod_license: MIT, mod_version: 1,
             mod_authors: mod_authors, mod_description: mod_description,
     ]
     inputs.properties replaceProperties

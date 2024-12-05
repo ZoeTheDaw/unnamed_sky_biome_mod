@@ -1,4 +1,4 @@
-package cam.internals.halcyonhorizons.server.misc;
+package com.internals.halcyonhorizons.server.misc;
 
 import net.minecraft.world.phys.Vec3;
 
@@ -52,8 +52,8 @@ public class VoronoiGenerator {
 
         int xPrimed = (xr - 1) * PrimeX;
         int zPrimedBase = (zr - 1) * PrimeZ;
-        Vec3 localPos = new Vec3(xr, 0, zr);
-        Vec3 cellPos = new Vec3(xr, 0, zr);
+        Vec3 localPos = new Vec3(xr, 200, zr);
+        Vec3 cellPos = new Vec3(xr, 200, zr);
         for (int xi = xr - 1; xi <= xr + 1; xi++)
         {
             int zPrimed = zPrimedBase;

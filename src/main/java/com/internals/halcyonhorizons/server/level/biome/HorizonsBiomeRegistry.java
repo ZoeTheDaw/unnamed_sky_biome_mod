@@ -10,7 +10,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.level.dimension.LevelStem;
-import net.minecraft.world.phys.Vec3;
 
 import java.util.List;
 
@@ -25,15 +24,14 @@ public class HorizonsBiomeRegistry {
     }
 
     public static float getBiomeFogNearness(Holder<Biome> value) {
-        if (value.is(PRIMORDIAL_CAVES)) {
+        if (value.is(AVIAN_INFIRMARY)) {
             return 0.5F;
         }
-
-        return 1.0F
+        return 1.0F;
     }
 
         public static float getBiomeSkyOverride(Holder<Biome> value) {
-        if (value.is(AVIAN_INFIRMARY_BIOMES)) {
+        if (value.is((ResourceLocation) HALCYON_HORIZONS_BIOMES)) {
             return 1.0F;
         }
         return 0.0F;
@@ -42,7 +40,7 @@ public class HorizonsBiomeRegistry {
     public static float calculateBiomeSkyOverride(Entity player) {
         int i = Minecraft.getInstance().options.biomeBlendRadius().get();
         if (i == 0) {
-            return ACBiomeRegistry.getBiomeSkyOverride(player.level().getBiome(player.blockPosition()));
+            return HorizonsBiomeRegistry.getBiomeSkyOverride(player.level().getBiome(player.blockPosition()));
         } else {
             return BiomeSampler.sampleBiomesFloat(player.level(), player.position(), HorizonsBiomeRegistry::getBiomeSkyOverride);
         }
