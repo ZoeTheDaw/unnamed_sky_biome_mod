@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.internals.halcyonhorizons.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "target": "@env(DEFAULT)",
+  "refmap": "halcyonhorizons.remap.json",
+  "mixins": [
+    "BiomesContainerMixin",
+    "BiomeSourceMixin",
+    "ChunkStatusMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}

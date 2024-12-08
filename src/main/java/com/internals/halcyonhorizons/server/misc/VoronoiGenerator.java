@@ -8,6 +8,7 @@ import net.minecraft.world.phys.Vec3;
  * https://github.com/Auburn/FastNoise
  * thank you cappin!
  */
+
 public class VoronoiGenerator {
     private long seed;
     private double offsetAmount = 1.0;

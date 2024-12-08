@@ -2,7 +2,6 @@ package com.internals.halcyonhorizons.server.item;
 
 import com.internals.halcyonhorizons.HalcyonHorizons;
 import com.internals.halcyonhorizons.server.block.HorizonsBlockRegistry;
-import com.internals.halcyonhorizons.server.entity.item.*;
 import com.internals.halcyonhorizons.server.level.biome.HorizonsBiomeRegistry;
 import com.github.alexthe666.citadel.server.block.LecternBooks;
 import net.minecraft.ChatFormatting;
@@ -36,3 +35,8 @@ import java.util.ArrayList;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+
+public class HorizonsItemRegistry{
+    public static final DeferredRegister<Item> DEF_REG = DeferredRegister.create(ForgeRegistries.ITEMS, HalcyonHorizons.MODID);
+    public static final Rarity RARITY_DEMONIC = Rarity.create("halcyonhorizons:youthful",style -> style.withColor(16751342));
+}

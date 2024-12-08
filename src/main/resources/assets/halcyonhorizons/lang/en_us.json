@@ -1,5 +1,4 @@
 {
-  "itemGroup.examplemod": "Example Mod Tab",
-  "block.examplemod.example_block": "Example Block",
-  "item.examplemod.example_item": "Example Item"
+  "block.halcyonhorizons.fluffpulp": "Fluffpulp",
+  "biome.halcyonhorizons.avian_infirmary": "Avian Infirmary"
 }
